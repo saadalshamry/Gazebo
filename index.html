@@ -8,40 +8,175 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="assets/css/reset.css">
+    <!-- <link rel="stylesheet" href="assets/css/reset.css"> -->
     <link rel="stylesheet" href="assets/js/bootstrap.min.js">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Notable" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+
+
+
+    <!-- fav icon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
     <title>Gazebo Burgers</title>
 </head>
 
 <body>
 
     <header>
-        <div class="container">
-
-            <nav>
-                <ul>
-                    <li><a href="">HOME</a></li>
-                    <li><a href="">ABOUT</a></li>
-                    <li><img src="assets/images/logo-gazebo.png" alt=""></li>
-                    <li><a href="">OUR MENU</a></li>
-                    <li><a href="">CONTACT</a></li>
-                </ul>
-            </nav>
+        <div id="logo-container">
+            <img src="assets/images/Logo_front_text.png" alt="" id="logo">
+            <div id="social-media">
+                <img src="assets/images/facebook.png" alt="">
+                <img src="assets/images/instagram.png" alt="">
+            </div>
         </div>
+        <ul id="nav">
+            <li><a href="">ABOUT</a></li>
+            <li><a href="">MENU</a></li>
+            <li><a href="">GALLERY</a></li>
+            <li><a href="">FIND US</a></li>
+        </ul>
+
+        <button id="order-now">
+            ORDER NOW
+        </button>
 
 
     </header>
-    <div class="banner">
-        <div class="container">
-            <h1>GAZEBO, WERE GREAT BURGER LIVES ...</h1>
-            <button id="order">
-                ORDER NOW
-            </button>
+
+
+    <!-- about -->
+    <div class="about">
+        <h1>ABOUT</h1>
+        <br>
+        <p id="paragraph"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid dolorum eius dolores
+            perferendis inventore
+            minima at rem deserunt vero nostrum nulla, dolore eos reprehenderit dolor cumque suscipit aspernatur ipsum
+            ut?</p>
+    </div>
+
+    <div class="menu ">
+        <h1>MENU</h1>
+        <div class="sub-menu bg-light">
+            <h3>Burgers</h3>
+            <hr>
+            <div class="catagory">
+                <img src="assets/images/burger-menu.jpg" alt="">
+                <h4>Item name</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero suscipit explicabo molestias! Veniam
+                    delectus eius, sint nostrum corrupti ab saepe libero repudiandae inventore velit quo. Facere iste
+                    nulla molestiae nam.</p>
+            </div>
+            <div class="catagory">
+                <img src="assets/images/burger-menu.jpg" alt="">
+                <h4>Item name</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero suscipit explicabo molestias! Veniam
+                    delectus eius, sint nostrum corrupti ab saepe libero repudiandae inventore velit quo. Facere iste
+                    nulla molestiae nam.</p>
+            </div>
+            <div class="catagory">
+                <img src="assets/images/burger-menu.jpg" alt="">
+                <h4>Item name</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero suscipit explicabo molestias! Veniam
+                    delectus eius, sint nostrum corrupti ab saepe libero repudiandae inventore velit quo. Facere iste
+                    nulla molestiae nam.</p>
+            </div>
+            <div class="catagory">
+                <img src="assets/images/burger-menu.jpg" alt="">
+                <h4>Item name</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero suscipit explicabo molestias! Veniam
+                    delectus eius, sint nostrum corrupti ab saepe libero repudiandae inventore velit quo. Facere iste
+                    nulla molestiae nam.</p>
+            </div>
+            <div class="catagory">
+                <img src="assets/images/burger-menu.jpg" alt="">
+                <h4>Item name</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero suscipit explicabo molestias! Veniam
+                    delectus eius, sint nostrum corrupti ab saepe libero repudiandae inventore velit quo. Facere iste
+                    nulla molestiae nam.</p>
+            </div>
+            <div class="catagory">
+                <img src="assets/images/burger-menu.jpg" alt="">
+                <h4>Item name</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero suscipit explicabo molestias! Veniam
+                    delectus eius, sint nostrum corrupti ab saepe libero repudiandae inventore velit quo. Facere iste
+                    nulla molestiae nam.</p>
+            </div>
+            <div class="catagory">
+                <img src="assets/images/burger-menu.jpg" alt="">
+                <h4>Item name</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero suscipit explicabo molestias! Veniam
+                    delectus eius, sint nostrum corrupti ab saepe libero repudiandae inventore velit quo. Facere iste
+                    nulla molestiae nam.</p>
+            </div>
+            <div class="catagory">
+                <img src="assets/images/burger-menu.jpg" alt="">
+                <h4>Item name</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero suscipit explicabo molestias! Veniam
+                    delectus eius, sint nostrum corrupti ab saepe libero repudiandae inventore velit quo. Facere iste
+                    nulla molestiae nam.</p>
+            </div>
+
         </div>
+        <i class="fas fa-chevron-circle-left  fa-5x text-danger"></i>
+
+        <i class="fas fa-chevron-circle-right fa-5x text-danger"></i>
+    </div>
+
+
+    <div class="gallery ">
+        <h1>GALLERY</h1>
+        <div class="galley-img">
+            <img src="assets/images/burger-menu.jpg" alt="">
+        </div>
+        <div class="galley-img">
+            <img src="assets/images/burger-menu.jpg" alt="">
+        </div>
+        <div class="galley-img">
+            <img src="assets/images/burger-menu.jpg" alt="">
+        </div>
+        <div class="galley-img">
+            <img src="assets/images/burger-menu.jpg" alt="">
+        </div>
+        <div class="galley-img">
+            <img src="assets/images/burger-menu.jpg" alt="">
+        </div>
+        <div class="galley-img">
+            <img src="assets/images/burger-menu.jpg" alt="">
+        </div>
+        <div class="galley-img">
+            <img src="assets/images/burger-menu.jpg" alt="">
+        </div>
+        <div class="galley-img">
+            <img src="assets/images/burger-menu.jpg" alt="">
+        </div>
+        <div class="galley-img">
+            <img src="assets/images/burger-menu.jpg" alt="">
+        </div>
+
+        <button id="load-more" class="btn">
+            LOAD MORE
+        </button>
+    </div>
+
+
+    <div class="contact ">
+
     </div>
 </body>
+
+
+<script src="assets/js/main.js"></script>
 
 </html>
