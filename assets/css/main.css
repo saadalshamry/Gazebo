@@ -101,6 +101,7 @@ header {
 
 /* footer  */
 .footer {
+  clear: both;
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -131,4 +132,41 @@ header {
 }
 .contact .address {
   padding: 25px;
+}
+
+/* menu section */
+.menu-section {
+  min-height: 300px;
+}
+.menu-item {
+  padding: 5px;
+  height: 80px;
+  border-bottom: 1px dashed #ddd;
+  cursor: pointer;
+  overflow: visible;
+}
+.col-lg-12 {
+  width: 49%;
+}
+.menu-item img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100%;
+  float: left;
+}
+.menu-item img:hover {
+  border-radius: 0px;
+  transition: 0.3s;
+}
+.menu-item p {
+  display: inline-block;
+  max-width: 70%;
+  color: #666;
+  margin: 10px;
+  float: left;
+}
+.menu-item span {
+  float: right;
+  line-height: 80px;
+  padding: 0 10px;
 }
