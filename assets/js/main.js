@@ -170,9 +170,40 @@ function initMap() {
   var marker = new google.maps.Marker({
     position: myLatLng,
     map: map,
+    icon: "assets/images/marker.png",
     title: "Hello World!"
   });
   marker.setMap(map);
 }
 // jquery
-$(document).ready(function() {});
+$(document).ready(function() {
+  // page animation
+  // about section
+  var firstSection = $(".about-section.one img");
+  var secondSection = $(".about-section.two img");
+  //menu section
+  var menu = $(".menu .container");
+  var menuoffset = menu.offset().top;
+  var firstSectionY = firstSection.offset().top - 400;
+  var galleryoffset = $(".gallery").offset().top;
+  var gallery = Array.from(document.querySelectorAll(".gallery img"));
+  //event
+  $(window).on("scroll", function() {
+    if ($(window).scrollTop() >= firstSectionY) {
+      $(firstSection).fadeTo("slow", 1);
+    }
+    if ($(window).scrollTop() >= firstSectionY + 300) {
+      $(secondSection).fadeTo("slow", 1);
+    }
+    if ($(window).scrollTop() >= menuoffset - 400) {
+      $(menu).fadeTo("slow", 1);
+    }
+    if ($(window).scrollTop() >= galleryoffset - 400) {
+      gallery.forEach(function(i, index) {
+        setTimeout(function() {
+          $(i).fadeTo("slow", 1);
+        }, 50 * index);
+      });
+    }
+  });
+});
