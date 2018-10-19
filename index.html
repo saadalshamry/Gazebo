@@ -37,11 +37,10 @@
             </div>
 
             <ul class="nav-list">
-                <li><a href="">Home</a></li>
-                <li><a href="">Menu</a></li>
-                <li></li>
-                <li><a href="">Galllery</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#gallery">Galllery</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
 
             <h1 id="intro">
@@ -54,10 +53,10 @@
         </div>
     </header>
 
-    <div class="about">
-        <div class="about-section one row container">
-            <img src="./assets/images/jukebox.png" alt="" class="col-lg-4">
-            <div class="col-lg-8">
+    <div class="about" id="about">
+        <div class="about-section one row container-fluid">
+            <img src="./assets/images/sharejpeg.jpeg" alt="" class="col-lg-5">
+            <div class="col-lg-7">
                 <h1>WE FOUND THE PERFECT LOCATION TO SHARE OUR CLASSIC
                     AMERICAN DINER VISION.</h1>
                 <p>Where different types of cultures and people; workers,
@@ -73,7 +72,7 @@
 
 
         </div>
-        <div class="about-section two row container">
+        <div class="about-section two row container-fluid">
 
             <div class="col-lg-7">
                 <h1>WE WORK WITH THE HIGHEST QUALITY HALAL PRODUCTS ON A
@@ -150,35 +149,40 @@
     </div>
 
     <!-- gallery section starts here -->
+    <div id="pop">
 
-    <div class="gallery">
+
+        <img src="./assets/images/storeImage.png" alt="" id="img">
+        <span class="close">&times;</span>
+    </div>
+    <div class="gallery" id="gallery">
         <div class="container">
             <div class="row">
                 <h1 class="col-lg-12">GALLERY</h1>
-                <img src="./assets/images/img.jpg" alt="" class="col-lg-6">
-                <img src="./assets/images/img.jpg" alt="" class="col-lg-3">
-                <img src="./assets/images/img.jpg" alt="" class="col-lg-3">
-                <img src="./assets/images/img.jpg" alt="" class="col-lg-3">
-                <img src="./assets/images/img.jpg" alt="" class="col-lg-3">
-                <img src="./assets/images/img.jpg" alt="" class="col-lg-6">
-                <img src="./assets/images/img.jpg" alt="" class="col-lg-6">
-                <img src="./assets/images/img.jpg" alt="" class="col-lg-6">
+                <img src="./assets/images/store.JPG" alt="" class="col-lg-6">
+                <img src="./assets/images/funelcake.JPG" alt="" class="col-lg-3">
+                <img src="./assets/images/casher.jpg" alt="" class="col-lg-3">
+                <img src="./assets/images/Shake.png" alt="" class="col-lg-3">
+                <img src="./assets/images/3Musketeers.jpg" alt="" class="col-lg-3">
+                <img src="./assets/images/inside.jpg" alt="" class="col-lg-6">
+                <img src="./assets/images/Steak-Sandwich.jpg" alt="" class="col-lg-6">
+                <img src="./assets/images/burger-fries.jpg" alt="" class="col-lg-6">
 
 
             </div>
         </div>
     </div>
-    <footer class="footer">
+    <footer class="footer" id="contact">
         <div class="contact container">
             <div class="row">
                 <div class="address col col-lg-8">
-                    <h3>CONTACT INFORMATION
+                    <h3><i class="fas fa-map-marker-alt"></i>
                     </h3>
                     <p>548 Trafalgar Rd.
                         Oakville, Ontario L6J 3J2. <br> <br>
                         TEL: 52145225415
                     </p>
-                    <h3>HOURS</h3>
+                    <h3><i class="far fa-clock"></i></h3>
                     <p>
                         Sun-Sat: 10:30 AM - 1:00 AM
                     </p>
@@ -186,7 +190,7 @@
                 <div class="col col-lg-4 text-center">
                     <img src="./assets/images/logo-2.png" alt="" id="footer-logo">
                 </div>
-                <div class=" col col-lg-12 bg-danger" id="map">
+                <div class=" col col-lg-12" id="map">
 
                 </div>
             </div>
