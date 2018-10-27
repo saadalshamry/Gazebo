@@ -224,4 +224,26 @@ $(document).ready(function() {
   span.onclick = function() {
     modal.style.display = "none";
   };
+
+  function myMenu(obj) {
+    var container = document.getElementById("items-container");
+    container.innerHTML = "";
+
+    obj.forEach(function(i) {
+      var menuItem = document.createElement("div");
+      var p = document.createElement("p");
+      var img = document.createElement("img");
+      var span = document.createElement("span");
+      p.innerHTML = "<b>" + i.name + "</b><br>" + i.descreption;
+      span.innerHTML = i.price;
+      img.setAttribute("src", i.img);
+      menuItem.append(img);
+      menuItem.append(p);
+      menuItem.append(span);
+      menuItem.classList.add("menu-item");
+      container.append(menuItem);
+    });
+  }
+
+  myMenu(burgerMenu);
 });
