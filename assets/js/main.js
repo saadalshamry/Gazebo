@@ -1,168 +1,135 @@
 // map
 var map;
+
 function initMap() {
-  var myLatLng = { lat: 43.45754118493179, lng: -79.68210518360138 };
+  var myLatLng = {
+    lat: 43.45754118493179,
+    lng: -79.68210518360138
+  };
   var map = new google.maps.Map(document.getElementById("map"), {
     center: myLatLng,
     zoom: 15,
-    styles: [
-      {
+    styles: [{
         elementType: "geometry",
-        stylers: [
-          {
-            color: "#f5f5f5"
-          }
-        ]
+        stylers: [{
+          color: "#f5f5f5"
+        }]
       },
       {
         elementType: "labels.icon",
-        stylers: [
-          {
-            visibility: "off"
-          }
-        ]
+        stylers: [{
+          visibility: "off"
+        }]
       },
       {
         elementType: "labels.text.fill",
-        stylers: [
-          {
-            color: "#616161"
-          }
-        ]
+        stylers: [{
+          color: "#616161"
+        }]
       },
       {
         elementType: "labels.text.stroke",
-        stylers: [
-          {
-            color: "#f5f5f5"
-          }
-        ]
+        stylers: [{
+          color: "#f5f5f5"
+        }]
       },
       {
         featureType: "administrative.land_parcel",
         elementType: "labels.text.fill",
-        stylers: [
-          {
-            color: "#bdbdbd"
-          }
-        ]
+        stylers: [{
+          color: "#bdbdbd"
+        }]
       },
       {
         featureType: "poi",
         elementType: "geometry",
-        stylers: [
-          {
-            color: "#eeeeee"
-          }
-        ]
+        stylers: [{
+          color: "#eeeeee"
+        }]
       },
       {
         featureType: "poi",
         elementType: "labels.text.fill",
-        stylers: [
-          {
-            color: "#757575"
-          }
-        ]
+        stylers: [{
+          color: "#757575"
+        }]
       },
       {
         featureType: "poi.park",
         elementType: "geometry",
-        stylers: [
-          {
-            color: "#e5e5e5"
-          }
-        ]
+        stylers: [{
+          color: "#e5e5e5"
+        }]
       },
       {
         featureType: "poi.park",
         elementType: "labels.text.fill",
-        stylers: [
-          {
-            color: "#9e9e9e"
-          }
-        ]
+        stylers: [{
+          color: "#9e9e9e"
+        }]
       },
       {
         featureType: "road",
         elementType: "geometry",
-        stylers: [
-          {
-            color: "#ffffff"
-          }
-        ]
+        stylers: [{
+          color: "#ffffff"
+        }]
       },
       {
         featureType: "road.arterial",
         elementType: "labels.text.fill",
-        stylers: [
-          {
-            color: "#757575"
-          }
-        ]
+        stylers: [{
+          color: "#757575"
+        }]
       },
       {
         featureType: "road.highway",
         elementType: "geometry",
-        stylers: [
-          {
-            color: "#dadada"
-          }
-        ]
+        stylers: [{
+          color: "#dadada"
+        }]
       },
       {
         featureType: "road.highway",
         elementType: "labels.text.fill",
-        stylers: [
-          {
-            color: "#616161"
-          }
-        ]
+        stylers: [{
+          color: "#616161"
+        }]
       },
       {
         featureType: "road.local",
         elementType: "labels.text.fill",
-        stylers: [
-          {
-            color: "#9e9e9e"
-          }
-        ]
+        stylers: [{
+          color: "#9e9e9e"
+        }]
       },
       {
         featureType: "transit.line",
         elementType: "geometry",
-        stylers: [
-          {
-            color: "#e5e5e5"
-          }
-        ]
+        stylers: [{
+          color: "#e5e5e5"
+        }]
       },
       {
         featureType: "transit.station",
         elementType: "geometry",
-        stylers: [
-          {
-            color: "#eeeeee"
-          }
-        ]
+        stylers: [{
+          color: "#eeeeee"
+        }]
       },
       {
         featureType: "water",
         elementType: "geometry",
-        stylers: [
-          {
-            color: "#c9c9c9"
-          }
-        ]
+        stylers: [{
+          color: "#c9c9c9"
+        }]
       },
       {
         featureType: "water",
         elementType: "labels.text.fill",
-        stylers: [
-          {
-            color: "#9e9e9e"
-          }
-        ]
+        stylers: [{
+          color: "#9e9e9e"
+        }]
       }
     ]
   });
@@ -176,7 +143,7 @@ function initMap() {
   marker.setMap(map);
 }
 // jquery
-$(document).ready(function() {
+$(document).ready(function () {
   // page animation
   // about section
   var firstSection = $(".about-section.one img");
@@ -188,7 +155,7 @@ $(document).ready(function() {
   var galleryoffset = $(".gallery").offset().top;
   var gallery = Array.from(document.querySelectorAll(".gallery img"));
   //event
-  $(window).on("scroll", function() {
+  $(window).on("scroll", function () {
     if ($(window).scrollTop() >= firstSectionY) {
       $(firstSection).fadeTo("slow", 1);
     }
@@ -199,8 +166,8 @@ $(document).ready(function() {
       $(menu).fadeTo("slow", 1);
     }
     if ($(window).scrollTop() >= galleryoffset - 400) {
-      gallery.forEach(function(i, index) {
-        setTimeout(function() {
+      gallery.forEach(function (i, index) {
+        setTimeout(function () {
           $(i).fadeTo("slow", 1);
         }, 50 * index);
       });
@@ -210,8 +177,8 @@ $(document).ready(function() {
   // gallery pop up
   var modal = document.getElementById("pop");
   var modalImg = document.getElementById("img");
-  document.querySelectorAll(".gallery img").forEach(function(i) {
-    i.addEventListener("click", function(e) {
+  document.querySelectorAll(".gallery img").forEach(function (i) {
+    i.addEventListener("click", function (e) {
       modal.style.display = "block";
       modalImg.src = this.src;
     });
@@ -221,29 +188,31 @@ $(document).ready(function() {
   var span = document.getElementsByClassName("close")[0];
 
   // When the user clicks on <span> (x), close the modal
-  span.onclick = function() {
+  span.onclick = function () {
     modal.style.display = "none";
   };
 
-  function myMenu(obj) {
-    var container = document.getElementById("items-container");
-    container.innerHTML = "";
 
-    obj.forEach(function(i) {
-      var menuItem = document.createElement("div");
-      var p = document.createElement("p");
-      var img = document.createElement("img");
-      var span = document.createElement("span");
-      p.innerHTML = "<b>" + i.name + "</b><br>" + i.descreption;
-      span.innerHTML = i.price;
-      img.setAttribute("src", i.img);
-      menuItem.append(img);
-      menuItem.append(p);
-      menuItem.append(span);
-      menuItem.classList.add("menu-item");
-      container.append(menuItem);
-    });
-  }
 
-  myMenu(burgerMenu);
+
 });
+
+function myMenu(obj) {
+  var container = document.getElementById("items-container");
+  container.innerHTML = "";
+
+  obj.forEach(function (i) {
+    var menuItem = document.createElement("div");
+    var p = document.createElement("p");
+    var img = document.createElement("img");
+    var span = document.createElement("span");
+    p.innerHTML = "<b>" + i.name + "</b><br>" + i.descreption;
+    span.innerHTML = i.price;
+    img.setAttribute("src", i.img);
+    menuItem.append(img);
+    menuItem.append(p);
+    menuItem.append(span);
+    menuItem.classList.add("menu-item");
+    container.append(menuItem);
+  });
+}

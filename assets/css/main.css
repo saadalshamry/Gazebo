@@ -9,9 +9,11 @@ html {
   position: relative;
   scroll-behavior: smooth;
 }
+
 body {
   margin-bottom: 790px;
 }
+
 /* index.html */
 
 /* header section */
@@ -37,11 +39,13 @@ header {
   height: fit-content;
   float: right;
 }
+
 .nav-list li {
   display: inline-block;
   margin: 20px;
   height: 35px;
 }
+
 .nav-list a {
   display: block;
   color: #e6e4e4;
@@ -76,6 +80,7 @@ header {
   margin-top: 40px;
   text-align: center;
 }
+
 #order-now:hover {
   background-color: unset;
   color: #26c3f5;
@@ -96,10 +101,12 @@ header {
   box-sizing: border-box;
   padding: 100px;
 }
+
 .about h1 {
   color: #26c3f5;
   text-align: center;
 }
+
 .about.container {
   padding: 40px 5px;
 }
@@ -109,19 +116,23 @@ header {
   clear: both;
   margin: 200px auto;
 }
+
 .about-section.one img,
 .about-section.two img {
   opacity: 0;
 }
+
 .about-section p {
   color: #666;
   font-size: 20px;
   text-align: center;
 }
+
 .about-section.two img,
 .about-section.one img {
   border-radius: 10%;
 }
+
 /* ---------/ about section -------------*/
 /*********************************************/
 /* footer  */
@@ -133,6 +144,7 @@ header {
   line-height: 490px;
   background-color: #222;
 }
+
 .contact {
   height: 100%;
 }
@@ -141,6 +153,7 @@ header {
   padding: 20px 0px;
   height: 100%;
 }
+
 .contact .col {
   height: 50%;
 }
@@ -148,18 +161,22 @@ header {
 #footer-logo {
   margin-bottom: 75px;
 }
+
 #map {
   box-shadow: 0px 0px 10px rgb(119, 119, 119);
 }
+
 .contact div {
   height: 50%;
 }
+
 .contact h3,
 .contact p {
   line-height: 100%;
   height: fit-content;
   margin: 20px auto;
 }
+
 .contact h3 {
   font-size: 40px;
   color: #26c3f5;
@@ -169,6 +186,7 @@ header {
   font-size: 20px;
   color: #fff;
 }
+
 .contact .address {
   padding: 25px;
 }
@@ -180,6 +198,7 @@ header {
   background-size: contain;
   background-attachment: fixed;
 }
+
 .menu .container {
   padding: 10px;
   background-color: #fff;
@@ -187,7 +206,9 @@ header {
   text-align: center;
   box-shadow: 0px 0px 10px #666;
   opacity: 0;
+  overflow: auto;
 }
+
 #menu {
   font-size: 30px;
   color: #26c3f5;
@@ -198,18 +219,22 @@ header {
   height: 60px;
   border: 3px solid #26c3f5;
 }
+
 #sub-menu {
   background-color: #26c3f5;
   height: fit-content;
 }
+
 #sub-menu li {
   display: inline-block;
   height: 100%;
   margin: 0 5px;
 }
+
 #sub-menu a:hover {
   text-decoration: none;
 }
+
 #sub-menu a {
   display: block;
   -webkit-text-stroke-width: 100%;
@@ -217,6 +242,7 @@ header {
   color: #fff;
   line-height: 60px;
 }
+
 .menu-item {
   width: 49%;
   margin: 10px 2px;
@@ -227,6 +253,7 @@ header {
   cursor: pointer;
   box-shadow: 0px 0px 2px #ccc;
   overflow: visible;
+  float: left;
 }
 
 .menu-item img {
@@ -234,9 +261,11 @@ header {
   height: 100%;
   float: left;
 }
+
 .menu-item:hover {
   border: 1px solid #666;
 }
+
 .menu-item p {
   display: inline-block;
   text-align: left;
@@ -247,6 +276,7 @@ header {
   overflow: hidden;
   padding: 3px;
 }
+
 .menu-item span {
   max-width: 23%;
   float: right;
@@ -260,14 +290,17 @@ header {
   from {
     transform: scale(0);
   }
+
   to {
     transform: scale(1);
   }
 }
+
 #pop img {
   animation-name: zoom;
   animation-duration: 0.6s;
 }
+
 #pop {
   position: fixed;
   top: 0;
@@ -287,6 +320,7 @@ header {
   opacity: 1;
   margin: auto;
 }
+
 .close {
   position: absolute;
   top: 15px;
@@ -303,11 +337,13 @@ header {
   text-decoration: none;
   cursor: pointer;
 }
+
 .gallery {
   padding: 100px 0px;
   min-height: 1000px;
   background-color: #f0f0f0;
 }
+
 .gallery img {
   opacity: 0;
   margin: 20px 0px;
@@ -323,9 +359,11 @@ header {
   .nav-list {
     width: 60%;
   }
+
   #intro {
     font-size: 50px;
   }
+
   .menu .container {
     max-width: 95%;
   }
@@ -336,12 +374,15 @@ header {
   header {
     padding: 20px;
   }
+
   .nav-list {
     width: 60%;
   }
+
   #intro {
     font-size: 50px;
   }
+
   .menu-item p,
   .menu-item span {
     font-size: 12px;
@@ -353,6 +394,7 @@ header {
   .header-poster {
     height: 250px;
   }
+
   .nav-list {
     width: 100%;
     padding: 0;
@@ -364,21 +406,26 @@ header {
     text-align: center;
     background-color: #f0f0f0;
   }
+
   .nav-list li {
     margin: 10px;
   }
+
   .nav-list a {
     color: #666;
   }
+
   #intro {
     font-size: 50px;
     text-align: center;
   }
+
   #order-now {
     display: block;
     margin: auto;
     transform: scale(0.8);
   }
+
   .logo {
     padding-top: 20px;
     display: block;
@@ -387,20 +434,25 @@ header {
     margin: auto;
     text-align: center;
   }
+
   header {
     position: relative;
     height: 80vh;
     background-size: cover;
   }
+
   .menu {
     background-size: 100% 100%;
   }
+
   #sub-menu {
     padding: 0px;
   }
+
   #sub-menu li {
     background-color: #26c3f5;
   }
+
   .menu-item {
     width: 100%;
     clear: both;
@@ -411,27 +463,34 @@ header {
   .header-poster {
     height: 180px;
   }
+
   .about {
     padding: 2px;
   }
+
   #footer-logo {
     height: 200px;
   }
 }
+
 @media (max-width: 480px) {
   header {
     background-image: url("../images/phone-main-image.jpg");
   }
+
   #intro {
     padding-top: 5px;
     font-size: 30px;
   }
+
   .nav-list li a {
     font-size: 15px;
   }
+
   .header-poster {
     height: 140px;
   }
+
   .menu-item span {
     font-size: 11px;
   }
