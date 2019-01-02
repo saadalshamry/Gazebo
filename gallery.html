@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <!-- fav icon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <title>GAZEBO BURGERS AND GRILL- Menu</title>
+    <style>
+        .container {
+            max-width: 1300px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="loading" style="  background: url('./assets/images/spinner.gif') no-repeat center center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: 9999999;"></div>
+
+    <div id="img-modal">
+        <div id="inner"></div>
+        <img src="" alt="" id="modal-img">
+    </div>
+    <!-- header  -->
+    <header class="header-3">
+        <nav>
+            <a href="./index.html" id="logo"><img src="./assets/images/logo.png" alt=""></a>
+            <ul>
+
+                <li><a href="./index.html#about">ABOUT THE RESTAURANT</a></li>
+                <li><a href="./menu.html">MENU</a></li>
+                <li><a href="./index.html#reservations">MAKE A RESERVATION</a></li>
+                <li><a href="./gallery.html">GALLERY</a></li>
+                <li><a href="https://www.skipthedishes.com/gazebo-burgers-and-grill" target="_blank">ORDER ONLINE</a></li>
+            </ul>
+            <img src="./assets/images/toggle.png" alt="" id="toggle">
+        </nav>
+        <h1>GALLERY</h1>
+    </header>
+
+    <!-- gallery  -->
+    <div class="container gallery">
+        <img src="./assets/images/gallery/GazeboBurgersAndGrill(TrafalgarRd.)_ButterFlyShrimp_2-Edit.jpg" alt="">
+        <img src="./assets/images/gallery/GazeboBurgersAndGrill(TrafalgarRd.)_CheeseBurger(KidsMeal)_1.jpg" alt="">
+        <img src="./assets/images/gallery/GazeboBurgersAndGrill(TrafalgarRd.)_CheeseBurger.jpg" alt="">
+        <img src="./assets/images/gallery/GazeboBurgersAndGrill(TrafalgarRd.)_Cheesecake_1.jpg" alt="">
+        <img src="./assets/images/gallery/GazeboBurgersAndGrill(TrafalgarRd.)_ChickenTender_2.jpg" alt="">
+        <img src="./assets/images/gallery/GazeboBurgersAndGrill(TrafalgarRd.)_ChocolateBomb_1.jpg" alt="">
+        <img src="./assets/images/gallery/GazeboBurgersAndGrill(TrafalgarRd.)_ChocolateLava_1.jpg" alt="">
+        <img src="./assets/images/gallery/GazeboBurgersAndGrill(TrafalgarRd.)_GazeboShakes_1.jpg" alt="">
+        <img src="./assets/images/gallery/GazeboBurgersAndGrill(TrafalgarRd.)_HeroImage_1.jpg" alt="">
+        <img src="./assets/images/gallery/GazeboBurgersAndGrill(TrafalgarRd.)_HotDog(KidsMeal)_1.jpg" alt="">
+        <img src="./assets/images/gallery/GazeboBurgersAndGrill(TrafalgarRd.)_PistachioIceCream_1.jpg" alt="">
+        <img src="./assets/images/gallery/GazeboBurgersAndGrill(TrafalgarRd.)_PoBoyShrimpSandwich.jpg" alt="">
+        <img src="./assets/images/gallery/GazeboBurgersAndGrill(TrafalgarRd.)_TheUltimateCheeseSteak_1.jpg" alt="">
+        <img src="./assets/images/gallery/GazeboBurgersAndGrill(TrafalgarRd.)_TheUltimateChickenSteak.jpg" alt="">
+        <img src="./assets/images/gallery/GazeboBurgersAndGrill(TrafalgarRd.)_TheUltimateSouvlaki_1.jpg" alt="">
+    </div>
+    <!-- footer  -->
+    <footer>
+        <div class="social-media">
+            <a href="https://www.instagram.com/gazeboburgers/" target="_blank"><img src="./assets/images/insta.png" alt=""></a>
+            <a href="https://www.facebook.com/GazeboBurgers/" target="_blank"><img src="./assets/images/facebook.png"
+                    alt=""></a>
+            <a href="https://www.skipthedishes.com/gazebo-burgers-and-grill" target="_blank"><img src="./assets/images/skip.png"
+                    alt=""></a>
+        </div>
+        <div class="address">
+            <p>
+                <strong>GAZEBO BURGERS AND GRILL</strong> <br>
+                84 TRAFALGAR ROAD, OAKVILLE, ONTARION, CA L5H R6H <br>
+                PHONE : (438) 728-5605
+            </p>
+        </div>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+<script src="./assets/js/main.js"></script>
+<script>
+    // scrolling effects
+    // make nav fixed
+    document.addEventListener('scroll', function () {
+        if (window.pageYOffset > 150) {
+            document.querySelector('nav').classList.add('fixed');
+        } else if (window.pageYOffset < 150) {
+            document.querySelector('nav').classList.remove('fixed');
+        }
+    })
+    // image gallery 
+    document.querySelectorAll('.container.gallery > img').forEach(function (e) {
+        e.addEventListener('click', function () {
+            document.getElementById('modal-img').setAttribute('src', this.src)
+            document.getElementById('img-modal').style.display = 'block';
+        })
+    });
+
+    document.getElementById('inner').addEventListener('click', function () {
+        document.getElementById('modal-img').setAttribute('src', "")
+        document.getElementById('img-modal').style.display = 'none';
+    })
+</script>
+
+</html>

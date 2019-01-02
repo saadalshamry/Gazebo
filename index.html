@@ -2,26 +2,13 @@
 <html lang="en">
 
 <head>
-    <!--[if lt IE 9]>
-  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-   <script>
-
-   </script>
-<![endif]-->
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- <link rel="stylesheet" href="assets/css/reset.css"> -->
-    <link rel="stylesheet" href="assets/js/bootstrap.min.js">
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-        crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
     <!-- fav icon -->
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
@@ -30,157 +17,91 @@
     <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
-    <title>Gazebo Burgers</title>
+    <title>GAZEBO BURGERS AND GRILL</title>
 </head>
 
 <body>
+    <div id="loading" style="  background: url('./assets/images/spinner.gif') no-repeat center center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 9999999;"></div>
+    <!-- header  -->
     <header>
-        <div class="container">
-            <div class="logo">
-                <img src="./assets/images/logo-2.png" alt="">
-            </div>
-
-            <ul class="nav-list">
-                <li><a href="#about">About</a></li>
-                <li><a href="#menu">Menu</a></li>
-                <li><a href="#gallery">Galllery</a></li>
-                <li><a href="#contact">Contact</a></li>
+        <nav>
+            <a href="#" id="logo"><img src="./assets/images/logo.png" alt=""></a>
+            <ul>
+                <li><a href="./index.html#about">ABOUT THE RESTAURANT</a></li>
+                <li><a href="./menu.html">MENU</a></li>
+                <li><a href="./index.html#reservations">MAKE A RESERVATION</a></li>
+                <li><a href="./gallery.html">GALLERY</a></li>
+                <li><a href="https://www.skipthedishes.com/gazebo-burgers-and-grill" target="_blank">ORDER ONLINE</a></li>
             </ul>
-
-            <h1 id="intro">
-                GAZEBO IS THE <br> BEST
-            </h1>
-
-            <button id="order-now">
-                ORDER NOW
-            </button>
-        </div>
+            <img src="./assets/images/toggle.png" alt="" id="toggle">
+        </nav>
+        <h1>GAZEBO BURGERS AND <br> GRILL</h1>
     </header>
 
-    <div class="container-fluid header-poster">
-
-    </div>
+    <!-- about restaurant -->
     <div class="about" id="about">
-        <div class="about-section one row container-fluid">
-            <img src="./assets/images/sharejpeg.jpeg" alt="" class="col-xl-5 col-sm-12">
-            <div class="col-xl-7 col-sm-12">
-                <h1>WE FOUND THE PERFECT LOCATION TO SHARE OUR CLASSIC
-                    AMERICAN DINER VISION.</h1>
-                <p>Where different types of cultures and people; workers,
-                    travelers, artists, and families
-                    gather.
+        <div>
+            <h1>about the restaurant</h1>
 
-                    Gazebo’s Diner is an authentic 50’s style diner serving
-                    up delicious Cheeseburgers, cheese steaks,
-                    Fish
-                    and chips, chicken wings, shakes & Funnel Cakes, this
-                    diner couldn’t be more 50’s if it tried. </p>
-            </div>
-
-
+            <h3>WE FOUND THE PERFECT LOCATION TO SHARE OUR HALAL
+                AMERICAN DINER VISION IN THE HEART OF OAKVILLE, ONTARIO.</h3>
+            <p>Where different types of cultures and people; workers, travelers,
+                artists, and families gather. Gazebo’s Diner is an authentic 50’s style
+                diner serving up delicious Cheeseburgers, cheese steaks, Fish and chips,
+                chicken wings, shakes & Funnel Cakes, this diner couldn’t be more 50’s if it tried. </p>
+            <h3>LOCATION:</h3>
+            <p>84 TRAFALGAR ROAD OAKVILLE ONTARION, CA
+                LT4 5KF <br> <a href="s">view on map</a> </p>
+            <h3>PHONE:</h3>
+            <p>(438) 728 - 5605</p>
+            <h3>HOURS:</h3>
+            <p>Every day from 11:00 am - 12:00 am</p>
         </div>
-        <div class="about-section two row container-fluid">
+        <img src="./assets/images/two-burgers.jpeg" alt="">
+    </div>
 
-            <div class="col-xl-7 col-sm-12">
-                <h1>WE WORK WITH THE HIGHEST QUALITY HALAL PRODUCTS ON A
-                    DAILY BASIS.</h1>
-                <p>Just the way it had been done in the past. That’s why the
-                    grill is the heart of our kitchen. We keep
-                    it turned on all day so that you can enjoy real grilled
-                    meat anytime! This allows us to offer you
-                    the best grilled hamburger with the most authentic
-                    taste.</p>
-            </div>
-            <img src="./assets/images/fresh.jpg" alt="" class="col-xl-5 col-sm-12">
+    <!-- reservations -->
+    <div class="reservations" id="reservations">
+        <h1>MAKE A RESERVATION</h1>
+        <form action="">
+            <label for="">WHEN:</label>
+            <input type="text" id="date">
+            <label for="">NUMBER OF PEOPLE:</label>
+            <input type="number">
+            <label for="">NAME:</label>
+            <input type="text">
+            <label for="">PHONE (OPTIONAL):</label>
+            <input type="text">
+            <button>SUBMIT</button>
+        </form>
+    </div>
+
+    <!-- footer  -->
+    <footer>
+        <div class="social-media">
+            <a href="https://www.instagram.com/gazeboburgers/" target="_blank"><img src="./assets/images/insta.png" alt=""></a>
+            <a href="https://www.facebook.com/GazeboBurgers/" target="_blank"><img src="./assets/images/facebook.png"
+                    alt=""></a>
+            <a href="https://www.skipthedishes.com/gazebo-burgers-and-grill" target="_blank"><img src="./assets/images/skip.png"
+                    alt=""></a>
         </div>
-
-    </div>
-
-    <div class="menu">
-        <div class="container">
-            <div class="col-xl-12 text-center">
-                <span id="menu">
-                    MENU
-                </span>
-            </div>
-            <div class="col-xl-12 text-center">
-                <ul id="sub-menu">
-                    <li><a onclick=myMenu(Burgers)>Burgers</a></li>
-                    <li><a onclick=myMenu(Platters)>Platters</a></li>
-                    <li><a onclick=myMenu(Savourysandwiches)>Savoury Sandwiches</a></li>
-                    <li><a onclick=myMenu(Gazebobaskets)>Gazebo Baskets</a></li>
-                    <li><a onclick=myMenu(Gazebotrios)>Gazebo Trios</a></li>
-                    <li><a onclick=myMenu(Sides)>Sides</a></li>
-                    <li><a onclick=myMenu(Salads)>Favorites & Salads</a></li>
-                    <li><a onclick=myMenu(Kidsmeal)>Kids Meal</a></li>
-                    <li><a onclick=myMenu(Drinks)>Drinks</a></li>
-                    <li><a onclick=myMenu(Desserts)>Desserts</a></li>
-                </ul>
-            </div>
-            <div id="items-container">
-
-            </div>
-
-
-
-        </div>
-    </div>
-    </div>
-    <!-- gallery section starts here -->
-    <div id="pop">
-
-        <img src="" id="img" alt="">
-        <span class="close">&times;</span>
-    </div>
-    <div class="gallery" id="gallery">
-        <div class="container">
-            <div class="row">
-                <h1 class="col-lg-12">GALLERY</h1>
-                <img src="./assets/images/store.JPG" alt="" class="col-lg-6 col-md-6">
-                <img src="./assets/images/funelcake.JPG" alt="" class="col-lg-3 col-md-6">
-                <img src="./assets/images/casher.jpg" alt="" class="col-lg-3 col-md-6">
-                <img src="./assets/images/Shake.png" alt="" class="col-lg-3 col-md-6">
-                <img src="./assets/images/3Musketeers.jpg" alt="" class="col-lg-3 col-md-6">
-                <img src="./assets/images/inside.jpg" alt="" class="col-lg-6 col-md-6">
-                <img src="./assets/images/Steak-Sandwich.jpg" alt="" class="col-lg-6 col-md-6">
-                <img src="./assets/images/burger-fries.jpg" alt="" class="col-lg-6 col-md-6">
-
-            </div>
-        </div>
-    </div>
-    <footer class="footer" id="contact">
-        <div class="contact container">
-            <div class="row ">
-                <div class="address  col-lg-8 col-md-8 col-sm-6">
-                    <h3><i class="fas fa-map-marker-alt"></i>
-                    </h3>
-                    <p>548 Trafalgar Rd.
-                        Oakville, Ontario L6J 3J2. <br> <br>
-                        TEL: 52145225415
-                    </p>
-                    <h3><i class="far fa-clock"></i></h3>
-                    <p>
-                        Sun-Sat: 10:30 AM - 1:00 AM
-                    </p>
-                </div>
-
-                <img src="./assets/images/logo-2.png" alt="" id="footer-logo" class="col-lg-4 col-md-4 col-sm-6">
-
-                <div class=" col-lg-12 col-sm-12 " id="map">
-
-                </div>
-            </div>
+        <div class="address">
+            <p>
+                <strong>GAZEBO BURGERS AND GRILL</strong> <br>
+                84 TRAFALGAR ROAD, OAKVILLE, ONTARION, CA L5H R6H <br>
+                PHONE : (438) 728-5605
+            </p>
         </div>
     </footer>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+<script src="./assets/js/main.js"></script>
 
-
-<script src="assets/js/menu.js"></script>
-<script src="assets/js/main.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDtMxoqdJChTdmpcq9diIdRtu-lJCuboSw&callback=initMap"
-    async defer></script>
-<script>
-
-</script>
 
 </html>
