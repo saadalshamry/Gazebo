@@ -102,7 +102,7 @@ p {
 header {
     width: 100%;
     min-height: 90%;
-    background-image: url('../images/burgers-color.jpg');
+    background-image: url('../images/image.jpg');
     background-position: center;
     background-size: 100% 130%;
     position: relative;
@@ -289,31 +289,31 @@ footer .address {
   z-index: 1;
 }
 .burgers {
-    background-image: url('../images/menu/burger.jpg');
+    background-image: url('../images/menu/burger-min.jpg');
 }
 .sandwiches {
-    background-image: url('../images/menu/steak.jpg');
+    background-image: url('../images/menu/steak-min.jpg');
 }
 .platters {
-    background-image: url('../images/menu/plate.jpg');
+    background-image: url('../images/menu/plate-min.jpg');
 }
 .baskets {
-    background-image: url('../images/menu/shrimp.jpg');
+    background-image: url('../images/menu/shrimp-min.jpg');
 }
 .salads {
-    background-image: url('../images/menu/burger.jpg');
+    background-image: url('../images/menu/burger-min.jpg');
 }
 .kids {
-    background-image: url('../images/menu/kids.jpg');
+    background-image: url('../images/menu/kids-min.jpg');
 }
 .desserts {
-    background-image: url('../images/menu/choc.jpg');
+    background-image: url('../images/menu/choc-min.jpg');
 }
 .drinks {
-    background-image: url('../images/menu/shake.jpg');
+    background-image: url('../images/menu/shake-min.jpg');
 }
 .sides {
-    background-image: url('../images/menu/side.jpg');
+    background-image: url('../images/menu/side-min.jpg');
 }
 
 
