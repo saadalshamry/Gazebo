@@ -469,4 +469,7 @@ footer .address {
       .menu-section {
           margin-top: 10px;
       }
+      header h1, .reservations h1 {
+          font-size: 3em;
+      }
    }
