@@ -270,13 +270,21 @@ footer .address {
     position: relative;
     z-index: 2;
 }
-.menu-section p {
+.menu-section p, .menu-section table th , .menu-section td {
     font-size: 1.4em;
     font-weight: 300;
     color: #fff;
     margin: 10px;
     position: relative;
     z-index: 3;
+}
+.menu-section table {
+    text-align: left;
+    width: 100%;
+}
+
+.menu-section td, .menu-section th {
+    padding: 5px;
 }
 .menu-section div {
   position: absolute;
@@ -301,7 +309,7 @@ footer .address {
     background-image: url('../images/menu/shrimp-min.jpg');
 }
 .salads {
-    background-image: url('../images/menu/burger-min.jpg');
+    background-image: url('../images/menu/trio-min.jpg');
 }
 .kids {
     background-image: url('../images/menu/kids-min.jpg');
@@ -471,5 +479,8 @@ footer .address {
       }
       header h1, .reservations h1 {
           font-size: 3em;
+      }
+      header h1 {
+          margin-top: 50px;
       }
    }
