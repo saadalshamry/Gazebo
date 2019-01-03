@@ -16,9 +16,7 @@ document.addEventListener('scroll', function () {
     }
 });
 
-window.addEventListener('DOMContentLoaded', function () {
-    document.getElementById("loading").style.display = "none";
-});
+
 
 document.getElementById('toggle').addEventListener('click', function () {
     var ul = document.querySelector('nav > ul');

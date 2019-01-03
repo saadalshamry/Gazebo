@@ -102,7 +102,7 @@ p {
 header {
     width: 100%;
     min-height: 90%;
-    background-image: url('../images/image.jpg');
+    background-image: url('../images/burgers.jpg');
     background-position: center;
     background-size: 100% 130%;
     position: relative;
@@ -333,6 +333,7 @@ footer .address {
     height: 100%;
     z-index: 500;
     display: none;
+    padding-top: 100px;
 }
 #img-modal #inner {
     position: absolute;
@@ -345,14 +346,19 @@ footer .address {
     z-index: 501;
 }
 #img-modal img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform:translate(-50%, -50%);
+    position: relative;
+   display: block;
+   margin: auto;
     width: 60%;
     max-width: 1000px;
     z-index: 502;
+    animation: zoom 0.3s;
+    transform-origin: center;
 }
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+  }
 /* media queries */
 /* 
 @media only screen and (max-width: 1331px) {
@@ -424,11 +430,15 @@ footer .address {
         margin: 18px 5px;
         float: right;
     }
-    .fixed {
-        opacity: 0.8;
-    }
     .container {
         width: 100%;
+    }
+    .fixed {
+        opacity: 1;
+        background-color: #fff;
+    }
+    .fixed img {
+        display: block;
     }
   }
 
@@ -442,11 +452,21 @@ footer .address {
      }
      .reservations form {
          width: 90%;
+     }header {
+         min-height: 40%;
      }
+     
   }
   @media only screen and (max-width: 475px) {
       .menu-section {
           width: 100%;
           margin: 0px;
+      }
+      
+      footer .social-media img {
+        max-height: 30px;
+      }
+      .menu-section {
+          margin-top: 10px;
       }
    }
